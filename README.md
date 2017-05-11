@@ -35,7 +35,9 @@ gem 이나 기타 꿀팁들은 하시면서 배우게 될것 같습니다
 
 오늘 블로그를 위해 동원되는 젬은 총 ++4개++ 입니다
 이미 익혔던 2개의 젬 외에, 추가로 ++3개++가 동원 됩니다
+
 ***
+
 [devise](https://github.com/plataformatec/devise) : 유저에게 로그인을 할 수 있도록 해주는 젬
 [paperclip](https://github.com/thoughtbot/paperclip) : 이미지 업로드를 도와주는 젬
 [++rolify++](https://github.com/RolifyCommunity/rolify) : 로그인 한 유저에게 레벨(권한등급)을 부여하는 젬
@@ -43,16 +45,17 @@ gem 이나 기타 꿀팁들은 하시면서 배우게 될것 같습니다
 [++faker++](https://github.com/stympy/faker) : 더미 데이터를 만들때 재미있는 랜덤 데이터를 생성하는 젬
 
 ***
+
 더불어서 **view page**는 다음과 같이 구성될 예정입니다
 
->Welcome home
-Posts index show new create edit update destroy
+> Welcome home
+> Posts index show new create edit update destroy
 
 
 사용하는 모델은
->User
-Post
-Role
+> User
+> Post
+> Role
 
 정도가 있겠네요
 
@@ -63,8 +66,11 @@ posts 에서 게시글을 확인 할 수 있도록 하였습니다
 그리고 db:seed를 통해서  db:drop을 할때마다 아이디를 새로 만드는 일없이, 편하게 블로그를 테스트 할 수 있도록 최종적으로 할 계획입니다
 
 ***
+
 여러분의 노가다 및 헷갈림을 매우 유발하는 디자인은 일부러 모두 뒤로 빼려고 노력했습니다. ~~한꺼번에 합시다. 한꺼번에.~~
+
 ***
+
 자. 그럼 시작해 봅시다.
 
 ```ruby
@@ -78,10 +84,11 @@ gem 'faker' # 더미데이터 생성
 bundle install
 ```
 > (rails 5.0.0 부터는 bundle install 대신 bundle만 쳐도 됩니다)
-(rails 버전 확인하는 방법은 터미널에 ```rails -v```)
-bash shell을 써서 ++bash창++ 이라 불리는데 (정확하게는 ++터미널++입니다)
+> (rails 버전 확인하는 방법은 터미널에 ```rails -v```)
+> bash shell을 써서 ++bash창++ 이라 불리는데 (정확하게는 ++터미널++입니다)
 
 그냥 plugin을 설치하는 과정이기 때문에 순서는 대략적으로 상관이 없습니다.
+
 * [gem](http://ruby-korea.github.io/rubygems-guides/what-is-a-gem/) 이란 뭐였죠?
 
 > gem 을 추가하고 나서, 항상 **CTRL-S**… (안하면 몸이 고달픔니다) 
